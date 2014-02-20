@@ -175,15 +175,76 @@
     <div class="entry">
       
         <p>According to Wikipedia, there are <a href="http://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems" target="_blank">a lot of issue / bug trackers</a>. If you&#39;re like me and you&#39;re managing a project, you likely tried most of them. The most common ones: Bugzilla, Mantis, Trac, all have the same in common: They get the job done, but are not the most pleasant to use. In this series of posts, I&#39;m going to design (and maybe prototype) an issue tracker with the following goals:</p>
+<h2 id="overview">Overview</h2>
+<h3 id="goals">Goals</h3>
+<ul>
+<li><strong>One page based</strong></li>
+</ul>
+<p>The issue tracker will be one page based. The main page is an overview page with the list of issues. The user can open, close, update, comment on issues without navigating to another page.</p>
+<ul>
+<li><strong>Attachments</strong></li>
+</ul>
+<p>An image describing an issue is much clearer for the developer than a description. Images should be visible inline and it should be easy to add images to issues. No popups asking to name or describe an image.</p>
+<ul>
+<li><strong>Excelent export functionality</strong></li>
+</ul>
+<p>It should be able to generate a report that is easy to read and understand for managers. It should include the fixing progress, progress of the indivudual developers, etc. Managers don&#39;t have time to read a spreadsheet with rows full of issue numbers. It should be a spreadsheet that is nicely designed and gives a clear overview of the overall status. Ideally issues and images should be included.</p>
+<h3 id="key-assumptions">Key assumptions</h3>
+<ul>
+<li>There will be one user adding, updating and monitoring issues.</li>
+<li>The managed team is &lt; 20 persons.</li>
+<li>This issue tracker will be used for a website project.</li>
+</ul>
+<h3 id="why">Why</h3>
+<p>I would like to have some public projects. By documenting every step I hope others can learn from it, or if you think you a better idea, please feel free to leave feedback. With the feedback I hope to become a better User Experience designer. I could design a mobile app, another CMS or anything else, and maybe later I will do that, but currently I&#39;m using an issue tracker and I have many ideas to improve it. In this series I will show you my design process, hopefully generating useful feedback, and in the end I will valuate if my ideas can improve issue tracking systems, or that the systems currently out there are as good as they can be.</p>
+<h2 id="let-s-get-started">Let&#39;s get started</h2>
+<h3 id="project-plan">Project Plan</h3>
+<ul>
+<li>Sitemap of planned pages</li>
+<li>Content gathering</li>
+<li>Wireframe / Interaction Design</li>
+<li>Visual design</li>
+<li>Prototype</li>
+</ul>
+<h3 id="sitemap">Sitemap</h3>
+<p>Easy, since this is an <em>One-page</em> issue tracker. The following pages will be included:</p>
+<ul>
+<li>Overview page (This is the main page, all other steps in the project plan will focus on this page)</li>
+<li>Issue Detail page</li>
+<li>Register / Login (Currently out of scope)</li>
+</ul>
+<p><img src="/images/Sitemap.png" alt="Sitemap for Issue tracker project" title="Sitemap for Issue tracker project"></p>
+<h3 id="content-gathering">Content gathering</h3>
+<p>The second step is also not that difficult. Normally this step would include competitor analysis, interviews with stakeholders and users, etc. For an issue tracker it is a lot easier. I&#39;ve looked at other issue trackers, and I&#39;ve asked myself what do I need in this issue tracker so it will make my job as a project manager easer. I always like to not down the content so I can refer to it later when I lay it out on a wireframe. I&#39;ve came up with the following:</p>
+<ul>
+<li>Logo / Title</li>
+<li>Project Name</li>
+<li>Username</li>
+<li>Search</li>
+<li>Export</li>
+<li>Overview of issue status</li>
+<li>Daily / Weekly tasks</li>
+<li>Issues:</li>
+<li>ID</li>
+<li>Severity</li>
+<li>Category</li>
+<li>Summary</li>
+<li>Description</li>
+<li>Attachments</li>
+<li>Comments</li>
+<li>Status</li>
+<li>Assignee</li>
+<li>Target fix date</li>
+<li>Add new issue</li>
+</ul>
+<p>Before we start sketching / wireframing all this into one page, I created an overview of how the page would look, and where the main parts would be positioned:</p>
+<p><img src="/images/Bug Tracker Layout Overview.png" alt="Layout Overview for Issue tracker project" title="Layout Overview for Issue tracker project"></p>
+<p>Next post will focus on the first iteration of the wireframe. Feedback and suggestions about the project, the methodology or anything else will be much appriciated.</p>
 
       
     </div>
     <footer>
       
-        
-          <div class="alignleft">
-            <a href="/2014/02/02/designing-a-one-page-issue-tracker/#more" class="more-link">Read More</a>
-          </div>
         
         
       
