@@ -1,5 +1,0 @@
----
-title: Portfolio
-date: 
-layout: ''
----
