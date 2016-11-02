@@ -298,18 +298,18 @@ textarea {
      color: #333;
    }
 
-   .casestudy, .resume{
+   .casestudy, .resume, .contactpage{
      margin-left: 12.5%;
      width: 75%;
      color: #333;
    }
 
-   .casestudy a, .resume a{
+   .casestudy a, .resume a, .contactpage a{
      font-weight: 300;
      color: #333;
    }
 
-   .casestudy a:hover, .resume a:hover{
+   .casestudy a:hover, .resume a:hover, .contactpage a:hover{
      color: #000;
    }
 
@@ -331,7 +331,7 @@ textarea {
      margin-bottom: 100px;
    }
 
-   .resume {
+   .resume, .contactpage {
      margin-top: 100px;
    }
 
