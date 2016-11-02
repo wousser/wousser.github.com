@@ -11,6 +11,7 @@ $(document).ready(function() {
     autoScrolling: false,
     fitToSection: true,
     fitToSectionDelay: 300,
-    showActiveTooltip: false
+    showActiveTooltip: false,
+    responsiveWidth: 768
   });
 });
