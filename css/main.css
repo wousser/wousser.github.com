@@ -689,8 +689,11 @@ float: left;
          .leftcontent {
              width: 100%;
          }
+         .section {
+    padding: 0 20px;
+  }
          h1 {
-           font-size: 2.0em;
+           font-size: 1.6em;
          }
 
           h2 {
@@ -701,12 +704,18 @@ float: left;
            background: none !important;
          }
 
-         #pt p, #vs p {
-           font-size: 1em;
+         p {
+           font-size: 1.0em;
          }
          .thingstolearn, .bottomimages, .tclogo {
            display: none;
          }
+        .social {
+    padding-right: 20px;
+        }
+        .name {
+    padding-left: 20px;
+      }
        }
 
 @media only screen and (min-width: 35em) {
