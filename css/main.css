@@ -695,6 +695,10 @@ float: left;
   #aboutsection {
     padding-top: 20px
   }
+
+  #aboutsection p {
+    font-size: 1.3em;
+  }
          h1 {
            font-size: 1.6em;
          }
