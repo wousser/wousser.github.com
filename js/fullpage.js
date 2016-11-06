@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $('#fullpage').fullpage({
     anchors: ['AboutMe', 'Huawei', 'SonyEricsson', 'HappyFish', 'Prototyping', 'MyWork'],
-    sectionsColor: ['#FFF6E5', '#2185C6', '#FF7E65', '#2185C6', '#3D454C'],
+    sectionsColor: ['#FFF6E5', '#5582AF', '#FF7E65', '#2185C6', '#3D454C'],
     navigation: false,
     navigationPosition: 'right',
     navigationTooltips: ['About Me', 'Huawei', 'Sony Ericsson', 'Happy Fish', 'Prototyping', 'My Work'],

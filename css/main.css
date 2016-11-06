@@ -205,14 +205,14 @@ textarea {
      margin-top: 40px;
    }
 
-   #aboutsection p {
+   .aboutsection p {
      font-size: 1.684em;
      line-height: 1.4375;
      font-weight: 300;
      color: #999;
    }
 
-   #aboutsection a {
+   .aboutsection a {
      color: #999;
      font-size: .5em;
      line-height: 1.64;
@@ -221,36 +221,36 @@ textarea {
      text-decoration: none;
    }
 
-   #aboutsection a:hover {
+   .aboutsection a:hover {
      text-decoration: underline;
    }
 
-   #hw {
+   .hwsection {
      background-size: cover;
      background-image: url(../img/bghw.jpg);
    }
 
-   #hw h1, #hw p, #hw a {
+   .hwsection h1,    .hwsection p,    .hwsection a {
      color: #fff;
    }
 
-   #se h1, #se p, #se a {
+   .sesection h1, .sesection p, .sesection a {
      color: #fff;
    }
 
-   #hf h1, #hf p, #hf a {
+   .hfsection h1, .hfsection p, .hfsection a {
      color: #fff;
    }
 
-   #pt h1, #pt p, #pt a,#pt h2,#pt li {
+   .ptsection h1, .ptsection p, .ptsection a, .ptsection h2, .ptsection li {
      color: #fff;
    }
 
-   #vs h1, #vs p, #vs a {
+   .vssection h1, .vssection p, .vssection a {
      color: #666;
    }
 
-   #se .bgimage {
+   .sesection .bgimage {
      position: absolute;
      z-index: 1000;
      top: 20%;
@@ -262,7 +262,7 @@ textarea {
      transform: translateX(55%);
    }
 
-   #hf .bgimage {
+   .hfsection .bgimage {
      position: absolute;
      z-index: 1000;
      bottom: 0px;
@@ -693,15 +693,15 @@ float: left;
     padding: 0 20px;
 
   }
-#hw {
+.hwsection {
   background-image: none;
 }
 
-  #aboutsection {
+  .aboutsection {
     padding-top: 20px
   }
 
-  #aboutsection p {
+  .aboutsection p {
     font-size: 1.3em;
   }
          h1 {
