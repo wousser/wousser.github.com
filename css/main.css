@@ -212,9 +212,9 @@ textarea {
      color: #999;
    }
 
-   .aboutsection a {
+   .aboutsection .cta a {
      color: #999;
-     font-size: .5em;
+     font-size: .6em;
      line-height: 1.64;
      font-weight: 700;
      text-transform: uppercase;
