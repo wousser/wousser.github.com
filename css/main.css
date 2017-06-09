@@ -244,6 +244,10 @@ textarea {
      color: #fff;
    }
 
+   .ihgsection h1, .ihgsection p, .ihgsection a {
+     color: #999;
+   }
+
    .hfsection h1, .hfsection p, .hfsection a {
      color: #fff;
    }
@@ -254,6 +258,18 @@ textarea {
 
    .vssection h1, .vssection p, .vssection a {
      color: #666;
+   }
+
+   .ihgsection .bgimage {
+     position: absolute;
+     z-index: 1000;
+     top: 20%;
+     bottom: auto;
+     background: url(../img/ihg/crosschannel-transparent.png) left center no-repeat;
+     background-size: contain;
+     height: 75%;
+     width: 100%;
+     transform: translateX(45%);
    }
 
    .sesection .bgimage {
@@ -370,6 +386,21 @@ textarea {
     background-repeat: no-repeat;
     background-position: 70%;
 
+   }
+
+   .ihgcasestudyimage {
+     height: 150px;
+       padding-top: 100px;
+       padding-bottom: 100px;
+       padding-left: 12.5%;
+       margin-top: 0;
+       width: 100%;
+       background-color: #FF7E65;
+       color: #fff;
+       background-image: url(../img/ihg/crosschannel-transparent.png);
+       background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 90%;
    }
 
    .bottomimages img {
