@@ -260,16 +260,22 @@ textarea {
      color: #666;
    }
 
+   .bgimage {
+     overflow-x: hidden;
+   }
+
    .ihgsection .bgimage {
      position: absolute;
      z-index: 1000;
      top: 20%;
+     left: 20%;
      bottom: auto;
-     background: url(../img/ihg/crosschannel-transparent.png) left center no-repeat;
+     background: url(../img/ihg/crosschannel-transparent.png) right center no-repeat;
      background-size: contain;
      height: 75%;
      width: 100%;
-     transform: translateX(45%);
+     /*transform: translateX(45%);*/
+
    }
 
    .sesection .bgimage {
@@ -277,22 +283,23 @@ textarea {
      z-index: 1000;
      top: 20%;
      bottom: auto;
-     background: url(../img/Vivaz-Pro.png) left center no-repeat;
+     background: url(../img/Vivaz-Pro.png) right center no-repeat;
      background-size: contain;
      height: 75%;
      width: 100%;
-     transform: translateX(55%);
+     /*transform: translateX(55%);*/
+
    }
 
    .hfsection .bgimage {
      position: absolute;
      z-index: 1000;
      bottom: 0px;
-     background: url(../img/happyfish.png) left center no-repeat;
+     background: url(../img/happyfish.png) right center no-repeat;
      background-size: contain;
      height: 75%;
      width: 100%;
-     transform: translateX(50%);
+     /*transform: translateX(50%);*/
    }
 
    .cta a {
@@ -392,7 +399,7 @@ textarea {
      width: 100%;
    }
 
-   .small {
+   img.small {
      width: 50%;
    }
 
@@ -460,8 +467,12 @@ textarea {
    .tclogo {
      position: absolute;
      width: 400px;
-
      left: 65%;
+   }
+
+   .tcphoto {
+     width: 20%;
+     padding-right: 20px;
    }
 
 
@@ -752,6 +763,11 @@ float: left;
 
   .aboutsection p {
     font-size: 1.3em;
+  }
+
+  p.small {
+    font-size: 1.0em;
+    line-height: 1.5em;
   }
          h1 {
            font-size: 1.6em;
