@@ -189,6 +189,8 @@ textarea {
    }
 
    p {
+     /*margin: 0;*/
+     padding-top: 5px;
      font-size: 1.2em;
      line-height: 1.64;
      font-weight: 300;
@@ -225,6 +227,14 @@ textarea {
      font-weight: 700;
      text-transform: uppercase;
      text-decoration: none;
+   }
+
+   .infobox {
+     float: right;
+   }
+
+   .infobox p {
+     margin: 0;
    }
 
    .aboutsection a:hover {
@@ -342,12 +352,37 @@ textarea {
      color: #000;
    }
 
+   .resume h1 {
+
+       font-size: 3.263em;
+       line-height: 1.048;
+       font-weight: 100;
+   }
+
+   .resume h2 {
+
+       font-size: 2.7em;
+       line-height: 1.048;
+       font-weight: 100;
+   }
+
    .resume h3 {
-     margin-top: 60px;
+     padding-top: 20px;
+     margin: 0;
+     font-size: 2.5em;
+   font-weight: 200;
    }
 
    .resume h4 {
-     margin-top: 40px;
+     font-size: 1.5em;
+     font-weight: 200;
+     margin: 0;
+     padding-top: 20px;
+   }
+
+   .resume h5 {
+     color: #444;
+     /*font-size: 1.0em;*/
    }
 
    ul, li {
@@ -884,5 +919,19 @@ float: left;
     h2,
     h3 {
         page-break-after: avoid;
+    }
+
+
+    /* resume print*/
+    #header {
+      display: none;
+    }
+
+    .resume h1 {
+      font-size: 2.263em;
+    }
+
+    .infobox {
+      font-size: 0.8em;
     }
 }
