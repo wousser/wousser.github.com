@@ -855,9 +855,9 @@ float: left;
 
    @media only screen and (max-device-width: 414px) {
 
-html {
-  /*font-size: 0.7em;*/
-}
+     .section {
+       padding: 0 40px;
+     }
          .fp-auto-height-responsive {
            padding-bottom: 50px;
            padding-top: 50px;
