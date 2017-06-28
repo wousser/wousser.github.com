@@ -831,6 +831,10 @@ float: left;
     width: 70%;
   }
 
+  .section {
+    padding: 0 40px;
+}
+
   .hwsection {
     background-position-x: -500px;
 }
