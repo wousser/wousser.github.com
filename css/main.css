@@ -827,20 +827,72 @@ float: left;
 
    @media only screen and (max-device-width: 667px)
        and (-webkit-device-pixel-ratio: 2) {
+
+html {
+  /*font-size: 0.7em;*/
+}
+         .fp-auto-height-responsive {
+           padding-bottom: 50px;
+           padding-top: 50px;
+         }
+
+         .ihgsection .bgimage {
+    position: relative;
+    z-index: 1000;
+     top: 0%;
+     left: 0%;
+    bottom: auto;
+    background: url(../img/ihg/crosschannel-transparent.png) center center no-repeat;
+    background-size: contain;
+    height: 200px;
+}
+
+.sesection .bgimage {
+    position: relative;
+     /*right: 0; */
+     top: 0%;
+     left: 0%;
+     width: 100%;
+    z-index: 1000;
+    /* top: 0; */
+    /* bottom: auto; */
+    background: url(../img/Vivaz-Pro.png) center center no-repeat;
+    background-size: contain;
+    height: 150px;
+  }
+
+  .hfsection .bgimage {
+    right: -15%;
+  }
+
+  .supersocialimage {
+    position: relative;
+     left: 0;
+    width: 100%;
+    /* height: 200px; */
+     top: 0;
+}
+
+.tcphoto {
+    width: 40%;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
          .leftcontent {
              width: 100%;
          }
          .section {
-    padding: 0 20px;
+    /*padding: 0 20px;*/
 
   }
 .hwsection {
-  background-image: none;
+  /*background-image: none;*/
 }
 
-  .aboutsection {
+  /*.aboutsection {
     padding-top: 20px
-  }
+  }*/
 
   .aboutsection p {
     font-size: 1.3em;
@@ -859,7 +911,7 @@ float: left;
           }
 
          .bgimage {
-           background: none !important;
+           /*background: none !important;*/
          }
 
          p {
