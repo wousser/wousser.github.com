@@ -320,11 +320,11 @@ textarea {
      position: absolute;
      z-index: 1000;
      bottom: 0;
-     right: 0;
-     background: url(../img/happyfish.png) right bottom no-repeat;
+     right: -5%;
+     background: url(../img/happyfish2.png) right bottom no-repeat;
      background-size: contain;
      height: 100%;
-     width: 45%;
+     width: 80%;
      /*transform: translateX(50%);*/
    }
 
