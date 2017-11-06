@@ -9,7 +9,7 @@ $(document).ready(function() {
     css3: true,
     scrollingSpeed: 700,
     autoScrolling: false,
-    fitToSection: true,
+    fitToSection: false,
     fitToSectionDelay: 300,
     showActiveTooltip: false,
     responsiveWidth: 768
