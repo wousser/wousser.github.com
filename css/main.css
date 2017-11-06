@@ -403,6 +403,15 @@ textarea {
      /*font-size: 1.0em;*/
    }
 
+   .resume strong {
+     font-size: 14px;
+   }
+
+   .resume .confidence {
+     font-size: 8px;
+     color: #999;
+   }
+
    ul, li {
      font-size: 19px;
    line-height: 1.64;
