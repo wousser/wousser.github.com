@@ -1,10 +1,10 @@
 $(document).ready(function() {
   $('#fullpage').fullpage({
-    anchors: ['AboutMe', 'EnterpriseUX','Hospitality', 'SonyEricsson', 'HappyFish', 'Prototyping', 'Contact'],
-    sectionsColor: ['#FFF6E5', '#5582AF', '#FFF6E5', '#FF7E65', '#2185C6', '#3D454C'],
+    anchors: ['AboutMe', 'NZMPproject', 'EnterpriseUX','Hospitality', 'SonyEricsson', 'HappyFish', 'Prototyping', 'Contact'],
+    sectionsColor: ['#ffe59c', '#5582AF', '#5582AF', '#FFF6E5', '#FF7E65', '#2185C6', '#3D454C'],
     navigation: false,
     navigationPosition: 'right',
-    navigationTooltips: ['About Me', 'EnterpriseUX', 'Hospitality', 'Sony Ericsson', 'Happy Fish', 'Prototyping', 'Contact'],
+    navigationTooltips: ['About Me', 'NZMP', 'EnterpriseUX', 'Hospitality', 'Sony Ericsson', 'Happy Fish', 'Prototyping', 'Contact'],
     //Scrolling
     css3: true,
     scrollingSpeed: 700,

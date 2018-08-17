@@ -186,7 +186,7 @@ textarea {
 
 	 p {
 		 /*margin: 0;*/
-		 padding-top: 5px;
+		 /* padding-top: 5px; */
 		 font-size: 1.2em;
 		 line-height: 1.64;
 		 font-weight: 300;
@@ -219,11 +219,11 @@ textarea {
 	}
 
 	 .aboutsection .cta a {
-		 border-bottom: 1px solid #999;
+		 border-bottom: 1px solid #373737;
 	 }
 
 	 .aboutsection .cta a:hover {
-		 border-bottom: 2px solid #999;
+		 border-bottom: 2px solid #373737;
 	 }
 
 	 .ihgsection .cta a {
@@ -258,6 +258,14 @@ textarea {
 		 border-bottom: 2px solid #fff;
 	 }
 
+	 .nzmpsection .cta a {
+		 border-bottom: 1px solid #fff;
+	 }
+
+	 .nzmpsection .cta a:hover {
+		 border-bottom: 2px solid #fff;
+	 }
+
 	 .vssection .cta a {
 		 border-bottom: 1px solid #666;
 	 }
@@ -274,19 +282,44 @@ textarea {
 		 margin: 0;
 	 }
 
+	 .footer p {
+		 font-size: 0.5em;
+	 }
 
+	 .footer {
+		 padding-left: 60px;
+	 }
+
+	 .nzmpsection {
+		 background-size: cover;
+		 background-image: url(../img/jenny-hill-202522-unsplash.jpg);
+	 }
 
 	 .hwsection {
 		 background-size: cover;
-		 background-image: url(../img/bghw.jpg);
+		 background-image: url(../img/echo-grid-255638-unsplash.jpg);
 	 }
 
-	 .hwsection h1,    .hwsection p,    .hwsection a {
+	 .nzmpsection h1, .nzmpsection p {
+		 color: #fff;
+		 background-color: #00000090;
+		 width: fit-content;
+		 padding-left: 8px;
+		 padding-right: 8px;
+		 border-radius: 2px;
+
+	 }
+
+	 .nzmpsection a {
+		 color: #fff;
+	 }
+
+	 .hwsection h1, .hwsection p, .hwsection a {
 		 color: #fff;
 	 }
 
 	 .aboutsection h1,    .aboutsection p,    .aboutsection a {
-		 color: #999;
+		 color: #373737;
 	 }
 
 	 .sesection h1, .sesection p, .sesection a {
