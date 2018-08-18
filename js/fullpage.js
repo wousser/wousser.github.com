@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $('#fullpage').fullpage({
-    anchors: ['AboutMe', 'NZMPproject', 'EnterpriseUX','Hospitality', 'SonyEricsson', 'HappyFish', 'Prototyping', 'Contact'],
+    anchors: ['AboutMe', 'DairyProject', 'EnterpriseUX','IHGProject', 'SonyEricsson', 'HappyFish', 'SideProjects', 'Contact'],
     sectionsColor: ['#ffe59c', '#5582AF', '#5582AF', '#FFF6E5', '#FF7E65', '#2185C6', '#3D454C'],
     navigation: false,
     navigationPosition: 'right',
