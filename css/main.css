@@ -566,15 +566,16 @@ display: block;
 
     a,
     a:visited {
-        text-decoration: underline;
+        text-decoration: none;
+        border-bottom: 0;
     }
 
     a[href]:after {
-        content: " (" attr(href) ")";
+        /* content: " (" attr(href) ")"; */
     }
 
     abbr[title]:after {
-        content: " (" attr(title) ")";
+        /* content: " (" attr(title) ")"; */
     }
 
     /*
