@@ -117,7 +117,7 @@ textarea {
 }
 
 body {
-  font-family: "Helvetica Neue", "HelveticaNeue", HelveticaNeue, Helvetica, Arial, Verdana, sans-serif;
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 300;
   line-height: 1.45;
   font-size: 1.125em;
@@ -130,6 +130,7 @@ p {
 }
 
 h1, h2, h3, h4 {
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   margin: 1.414em 0 0.5em;
   font-weight: inherit;
   line-height: 1.2;
@@ -166,6 +167,10 @@ a:hover, .about a:hover {
   margin-bottom: 5%;
 }
 
+.hero h1 {
+  color: red;
+}
+
 .about, .about a {
   background-color: #ffe59c;
   color: #3b3e4d;
@@ -185,7 +190,7 @@ a:hover, .about a:hover {
 
 .nzmp h1, .nzmp p {
   width: fit-content;
-  background-color: rgba(255, 255, 255, 0.50);
+  background-color: hsla(0, 0%, 100%, 0.9);
   padding: 0 8px;
 
 }
