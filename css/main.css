@@ -217,18 +217,31 @@ a:hover, .about a:hover {
   background-size: 40%;
 }
 
+.socialcontactjournal {
+  background-color: #FFC100;
+  background-image: url(../img/screenshot_today_screen.png);
+  background-repeat: no-repeat;
+  color: #4A4A4A;
+  background-position: bottom 50% right 16px;
+  background-size: 24%;
+}
+
 .hf {
   background-color: #2185C6;
   background-image: url(../img/happyfish.png);
   background-position: right 16px bottom 16px;
   background-repeat: no-repeat;
-  background-size: 70%;
+  background-size: 60%;
 }
 
 .sideprojects, .sideprojects a {
   background-color: #3D454C;
   color: #cadbe8;
   border-bottom: 1px solid #cadbe8;
+  background-image: url(../img/tcdisrupt/tclogo.png);
+  background-position: right 8% top 8%;
+  background-repeat: no-repeat;
+  background-size: 10%;
 }
 
 .sideprojects h2 {
@@ -260,11 +273,6 @@ a:hover, .about a:hover {
 
 .supersocialimage {
   width: 50%;
-  margin: 16px 0;
-}
-
-.tclogo {
-  width: 20%;
   margin: 16px 0;
 }
 
