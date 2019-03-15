@@ -206,6 +206,10 @@ a:hover, .about a:hover {
 
 .watsons {
   background-color: rgb(0, 154, 169);
+  background-image: url(../img/asw-screenshot.png);
+  background-repeat: no-repeat;
+  background-position: bottom 0 right 16px;
+  background-size: 20%;
 }
 
 .watsons h1, .watsons p {
