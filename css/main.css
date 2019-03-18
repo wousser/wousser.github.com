@@ -27,12 +27,12 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #B3D4FC;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #B3D4FC;
     text-shadow: none;
 }
 
@@ -44,7 +44,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #CCC;
     margin: 1em 0;
     padding: 0;
 }
@@ -88,7 +88,7 @@ textarea {
 
 .browserupgrade {
     margin: 0.2em 0;
-    background: #ccc;
+    background: #CCC;
     color: #000;
     padding: 0.2em 0;
 }
@@ -98,7 +98,7 @@ textarea {
    ========================================================================== */
 
 .fullpage {
-  /* Height and width fallback for older browsers. */
+    /* Height and width fallback for older browsers. */
     min-height: 100%;
     width: 100%;
 
@@ -117,359 +117,421 @@ textarea {
 }
 
 body {
-  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 300;
-  line-height: 1.45;
+    font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 100;
+    line-height: 1.45;
 }
 
 p {
-  margin-bottom: 1.3em;
-  max-width: 60%;
-  line-height: 1.80;
-  font-size: 1em;
-}
-
-h1, h2, h3, h4 {
-  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
-  margin: 1.414em 0 0.5em;
+    margin-bottom: 1.3em;
+    max-width: 60%;
+    line-height: 1.80;
+    font-size: 1.333em;
+    font-weight: 100;
 }
 
 h1 {
-  margin-top: 0;
-  font-size: 3.157em;
-  font-weight: 100;
+    margin-top: 0;
+    font-size: 3.157em;
+    /* margin-bottom: 1em; */
+    font-weight: 100;
 }
 
-h2 {font-size: 2.369em;}
+h2 {
+    margin-top: 0;
+    font-size: 2.369em;
+    /* margin-bottom: 2.369em; */
+}
 
-h3 {font-size: 1.777em;}
+h3 {
+    margin-top: 0;
+    font-size: 1.777em;
+    /* margin-bottom: 1.777em; */
+}
 
-h4 {font-size: 1.333em;}
+h4 {
+    margin-top: 0;
+    font-size: 1.333em;
+    /* margin-bottom: 1.333em; */
+}
 
-small, .font_small {font-size: 0.75em;}
+h5 {
+    margin-top: 0;
+    font-size: 0.83em;
+    font-weight: 100;
+    /* margin-bottom: 1.333em; */
+}
+
+small, .font_small {
+    margin-top: 0;
+    font-size: 0.75em;
+    /* margin-bottom: 0.75em; */
+}
 
 a {
-  color: #222;
-  font-weight: 400;
-  text-decoration: none;
-  border-bottom: 1px solid #222;
+    color: #222;
+    text-decoration: none;
+    border-bottom: 1px solid #222;
 }
 
-a:hover, .about a:hover {
-  border-width: medium;
+a:hover {
+    border-width: medium;
 }
 
 .content {
-  width: 80%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
-.hero h1 {
-  color: red;
+.summary {
+    margin-bottom: 48px;
 }
 
 .about, .about a {
-  background-color: #ffe59c;
-  color: #3b3e4d;
-  /* sectionsColor: ['#ffe59c', '#5582AF', '#5582AF', '#FFF6E5', '#FF7E65', '#2185C6', '#3D454C'], */
+    background-color: #FFE59C;
+    color: #3B3E4D;
+    /* sectionsColor: ['#ffe59c', '#5582AF', '#5582AF', '#FFF6E5', '#FF7E65', '#2185C6', '#3D454C'], */
 }
 
 .about a {
-  border-bottom: 1px solid #3b3e4d;
-  /* sectionsColor: ['#ffe59c', '#5582AF', '#5582AF', '#FFF6E5', '#FF7E65', '#2185C6', '#3D454C'], */
+    border-bottom: 1px solid #3B3E4D;
+    /* sectionsColor: ['#ffe59c', '#5582AF', '#5582AF', '#FFF6E5', '#FF7E65', '#2185C6', '#3D454C'], */
 }
 
 .nzmp {
-  background-color: #fff;
-  background-size: cover;
-  background-image: url(../img/jenny-hill-202522-unsplash.jpg);
+    background-color: #FFF;
+    background-size: cover;
+    background-image: url(../img/jenny-hill-202522-unsplash.jpg);
 }
 
 .nzmp h1, .nzmp p {
-  width: fit-content;
-  background-color: hsla(0, 0%, 100%, 0.9);
-  padding: 0 8px;
+    width: fit-content;
+    background-color: hsla(0, 0%, 100%, 0.9);
+    padding: 0 8px;
+    border-radius: 4px;
 }
 
 .hw {
-  background-color: #fff;
-  background-size: cover;
-  background-image: url(../img/aerial-work-under-the-burning-sun.jpg);
+    background-color: #FFF;
+    background-size: cover;
+    background-image: url(../img/aerial-work-under-the-burning-sun.jpg);
 }
 
 .hw h1, .hw p {
-  width: fit-content;
-  background-color: #6885AD;
-  padding: 0 8px;
+    width: fit-content;
+    background-color: #6885AD;
+    padding: 0 8px;
+    border-radius: 4px;
 }
 
 .watsons {
-  background-color: rgb(0, 154, 169);
-  background-image: url(../img/asw-screenshot.png);
-  background-repeat: no-repeat;
-  background-position: bottom 0 right 16px;
-  background-size: 20%;
+    background-color: rgb(0, 154, 169);
+    background-image: url(../img/asw-screenshot.png);
+    background-repeat: no-repeat;
+    background-position: bottom 0 right 16px;
+    background-size: 20%;
 }
 
 .watsons h1, .watsons p {
-  color: #fff;
+    color: #FFF;
+    background-color: rgb(0, 154, 169);
+    width: fit-content;
+    border-radius: 4px;
 }
 
 .boc {
-  background-color: #fff;
-  background-size: cover;
-  background-image: url(../img/hongkong.jpg);
+    background-color: #FFF;
+    background-size: cover;
+    background-image: url(../img/hongkong.jpg);
 }
 
 .ihg {
-  background-color: #FFF6E5;
-  background-image: url(../img/crosschannel-transparent.png);
-  background-position: bottom 16px right 16px;
-  background-repeat: no-repeat;
-  background-size: 45%;
+    background-color: #FFF6E5;
+    background-image: url(../img/crosschannel-transparent.png);
+    background-position: bottom 16px right 16px;
+    background-repeat: no-repeat;
+    background-size: 45%;
+}
+
+.ihg h1, .ihg p {
+    background-color: #FFF6E5;
+    width: fit-content;
+    border-radius: 4px;
 }
 
 .se {
-  background-color: #FF7E65;
-  background-image: url(../img/Vivaz-Pro.png);
-  background-repeat: no-repeat;
-  background-position: bottom 16px right 16px;
-  background-size: 40%;
+    background-color: #FF7E65;
+    background-image: url(../img/Vivaz-Pro.png);
+    background-repeat: no-repeat;
+    background-position: bottom 16px right 16px;
+    background-size: 40%;
+}
+
+.se h1, .se p {
+    background-color: #FF7E65;
+    width: fit-content;
+    border-radius: 4px;
 }
 
 .socialcontactjournal {
-  background-color: #FFC100;
-  background-image: url(../img/screenshot_today_screen.png);
-  background-repeat: no-repeat;
-  color: #4A4A4A;
-  background-position: bottom 50% right 16px;
-  background-size: 24%;
+    background-color: #FFC100;
+    background-image: url(../img/screenshot_today_screen.png);
+    background-repeat: no-repeat;
+    color: #4A4A4A;
+    background-position: bottom 50% right 16px;
+    background-size: 24%;
+}
+
+.socialcontactjournal h1, .socialcontactjournal p {
+    background-color: #FFC100;
+    width: fit-content;
+    border-radius: 4px;
 }
 
 .hf {
-  background-color: #2185C6;
-  background-image: url(../img/happyfish.png);
-  background-position: right 16px bottom 16px;
-  background-repeat: no-repeat;
-  background-size: 60%;
+    background-color: #2185C6;
+    background-image: url(../img/happyfish.png);
+    background-position: right 16px bottom 16px;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+.hf h1, .hf p {
+    background-color: #2185C6;
+    width: fit-content;
+    border-radius: 4px;
 }
 
 .sideprojects, .sideprojects a {
-  background-color: #3D454C;
-  color: #cadbe8;
-  border-bottom: 1px solid #cadbe8;
-  background-image: url(../img/tcdisrupt/tclogo.png);
-  background-position: right 8% top 8%;
-  background-repeat: no-repeat;
-  background-size: 10%;
+    background-color: #3D454C;
+    color: #CADBE8;
+    border-bottom: 1px solid #CADBE8;
+    background-image: url(../img/tcdisrupt/tclogo.png);
+    background-position: right 8% top 8%;
+    background-repeat: no-repeat;
+    background-size: 10%;
 }
 
 .sideprojects h2 {
-  font-weight: 100;
-  margin: 0;
+    font-weight: 100;
+    margin: 0;
+}
+
+.sideprojects h1, .sideprojects p {
+    background-color: #3D454C;
+    width: fit-content;
+    border-radius: 4px;
 }
 
 .sideprojects p {
-  max-width: unset;
+    max-width: unset;
 }
 
 .contact {
-  background-color: #ffe59c;
+    background-color: #FFE59C;
 }
 
 .footer {
-  font-size: small;
-  margin: 0 32px;
+    font-size: small;
+    margin: 0 32px;
 }
 
 .footer p {
-  margin: 0;
+    margin: 0;
+    font-size: 0.8em;
 }
 
 .highlight {
-  font-weight: normal;
-  font-size: smaller;
-  font-style: italic;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1em;
 }
 
 .supersocialimage {
-  width: 50%;
-  margin: 16px 0;
+    width: 50%;
+    margin: 16px 0;
 }
 
 .tcphoto {
-  width: 20%;
+    width: 20%;
 }
 
 /* header */
-#header{
-  position:fixed;
-  height: 40px;
-  display: block;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.45);
-  z-index: 1000;
-  text-align: center;
-  color: #333;
-}
 
-#header{
-  top: 0px;
+#header {
+    position: fixed;
+    height: 40px;
+    display: block;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.45);
+    z-index: 1000;
+    text-align: center;
+    color: #333;
+    top: 0px;
 }
 
 .name {
-  float: left;
-  padding-left: 60px;
-  padding-top: 10px;
+    float: left;
+    padding-left: 60px;
+    padding-top: 10px;
 }
 
 .name a {
-  color: #333;
-  text-decoration: none;
-  border: none;
+    color: #333;
+    text-decoration: none;
+    border: none;
 }
 
 .name a:hover {
-  color: #000;
-  text-decoration: none;
-  font-weight: 400;
+    color: #000;
+    text-decoration: none;
+    font-weight: 400;
 }
 
 #wechat-link a:hover +  {
     display: block;
 }
 
-#wechat-widget {
-display: none;
-}
+/* #wechat-widget {
+    
+} */
 
 .wechat:hover #wechat-widget {
-display: block;
+    display: block;
 }
 
 #wechat-widget {
-     position: absolute;
-       background: #fff;
-       border: #ddd 1px solid;
-       box-shadow: 0px 2px 3px rgba(0,0,0,0.25);
-       padding: 2px;
-       text-align: center;
-       font-weight: 300;
-       color: #111;
-       width: 200px;
-       max-width: 200px;
-       right: 3%;
-       top: 40px;
-   }
+    display: none;
+    position: absolute;
+    background: #FFF;
+    border: #DDD 1px solid;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.25);
+    padding: 2px;
+    text-align: center;
+    font-weight: 300;
+    color: #111;
+    width: 200px;
+    max-width: 200px;
+    right: 3%;
+    top: 40px;
+}
 
-   #wechat-widget p {
-     font-size: 12px;
-     max-width: unset;
-   }
+#wechat-widget p {
+    font-size: 12px;
+    max-width: unset;
+}
 
-   #wechat-widget img {
-     width: 200px;
-   }
+#wechat-widget img {
+    width: 200px;
+}
 
-   .social {
-     float: right;
-     padding-right: 60px;
-     padding-top: 5px;
-     margin: auto;
-     width: 120px;
-     height: 100%;
-     -webkit-box-sizing: initial;
-     box-sizing: initial;
-   }
+.social {
+    float: right;
+    padding-right: 60px;
+    padding-top: 5px;
+    margin: auto;
+    width: 120px;
+    height: 100%;
+    box-sizing: initial;
+}
 
-   .social a {
-     border: none;
-   }
+.social a {
+    border: none;
+}
 
-   .social-icon {
-       float: left;
-       width: 40px;
-       opacity: 0.5;
-       height: 100%;
-   }
+.social-icon {
+    float: left;
+    width: 40px;
+    opacity: 0.5;
+    height: 100%;
+}
 
-   .social-icon:hover {
-       opacity: 1;
-   }
+.social-icon:hover {
+    opacity: 1;
+}
 
 /* ==========================================================================
   Resume
   ========================================================================== */
 
-  .resume {
+.resume {
     margin-left: 12.5%;
     width: 75%;
     margin-bottom: 100px;
     margin-top: 100px;
-  }
+}
 
-  .resume h1 {
-      font-size: 3.263em;
-      line-height: 1.048;
-      font-weight: 100;
-  }
+.resume h1 {
+    font-size: 3.263em;
+    line-height: 1.048;
+    font-weight: 100;
+}
 
-  .resume h2 {
-      font-size: 2.7em;
-      line-height: 1.048;
-      font-weight: 100;
-  }
+.resume h2 {
+    font-size: 2.7em;
+    line-height: 1.048;
+    font-weight: 300;
+    margin-top: 48px;
+}
 
-  .resume h3 {
-    padding-top: 20px;
-    margin: 0;
+.resume h3 {
     font-size: 2.5em;
-  font-weight: 200;
-  }
+    font-weight: 200;
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
 
-  .resume h4 {
+.resume h4 {
     font-size: 1.5em;
     font-weight: 200;
-    margin: 0;
-    padding-top: 20px;
-  }
+    margin-bottom: 16px;
+    margin-top: 24px;
+}
 
-  .resume h5 {
+.resume h5 {
     color: #222;
-  }
+    margin-bottom: 24px;
+    
+}
 
-  .resume p {
+.resume p {
+  font-size: 1em;
     max-width: unset;
-  }
+}
 
-  .resume strong {
+.resume strong {
     font-size: 0.8em;
-  }
+}
 
-  .resume li {
+.resume li {
     margin-bottom: 4px;
-  }
+    line-height: 1.80;
+}
 
-  .resume p.smaller {
+.resume p.smaller {
     font-size: 0.8em;
-  }
+}
 
-  .resume p.confidence {
+.resume p.confidence {
     font-size: 0.6em;
-  }
+}
 
-  .resume a {
+.resume a {
     font-weight: unset;
-  }
+}
 
-  .infobox {
+.infobox {
     float: right;
-  }
+}
 
-  .infobox p {
+.infobox p {
     margin: 0;
-  }
+}
+
+.infobox a {
+    font-size: 0.8em;
+}
 
 /* ==========================================================================
    Helper classes
@@ -561,57 +623,92 @@ display: block;
     /* Style adjustments for viewports that meet the condition */
 }
 
-@media only screen
-  and (min-width: 320px)
-  and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    
+    .name {
+        padding-left: 16px;
+    }
+
+    .social {
+        padding-right: 16px;
+    }
+
     h1, .resume h1 {
-      font-size: 2em;
+        font-size: 2em;
     }
+
     p {
-      max-width: unset;
+        max-width: unset;
     }
+
     .infobox {
-      display: none;
+        display: none;
+    }
+
+    .resume h3 {
+        font-size: 1.3em;
+        font-weight: 300;
     }
 
     .resume h4 {
-      font-size: 1.77em;
+        font-size: 1.2em;
+        font-weight: 200;
+        margin-bottom: 16px;
     }
 
     .resume h5 {
-      font-size: 1.2em;
+        font-size: 1em;
+        font-weight: 100;
+        margin-bottom: 16px;
+        margin-top: 0;
+    }
+
+    .resume li {
+        font-size: 1em;
+        margin-bottom: 8px;
     }
 
     .resume {
-      margin-left: 5%;
-      margin-right: 5%;
-      width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 15%;
+        width: 90%;
     }
 
     .fullpage {
-      min-height: 600px;
+        min-height: 600px;
     }
-  }
+}
 
-  @media only screen
-  and (max-device-width: 768px) {
+@media only screen and (max-device-width: 768px) {
+    
     h1 {
-      font-size: 1.1em;
+        font-size: 1.1em;
+        font-weight: 400;
     }
+
     p {
-      font-size: 1em;
+        font-size: 1em;
     }
 
     p.highlight {
-      font-size: 0.5em;
+        font-size: 0.8em;
     }
-  }
-  
+
+    .socialcontactjournal {
+        background-position: bottom 12px right 16px;
+    }
+
+    .sideprojects h2 {
+        font-size: 1em;
+        font-weight: 300;
+    }
+}  
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -622,12 +719,12 @@ display: block;
    ========================================================================== */
 
 @media print {
+
     *,
     *:before,
     *:after {
         background: transparent !important;
         color: #000 !important; /* Black prints faster */
-        -webkit-box-shadow: none !important;
         box-shadow: none !important;
         text-shadow: none !important;
     }
@@ -638,13 +735,13 @@ display: block;
         border-bottom: 0;
     }
 
-    a[href]:after {
-        /* content: " (" attr(href) ")"; */
-    }
+    /* a[href]:after {
+        content: " (" attr(href) ")";
+    } */
 
-    abbr[title]:after {
-        /* content: " (" attr(title) ")"; */
-    }
+    /* abbr[title]:after {
+        content: " (" attr(title) ")";
+    } */
 
     /*
      * Don't show links that are fragment identifiers,
@@ -659,6 +756,7 @@ display: block;
     pre {
         white-space: pre-wrap !important;
     }
+
     pre,
     blockquote {
         border: 1px solid #999;
