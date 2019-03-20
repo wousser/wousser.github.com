@@ -178,6 +178,41 @@ a:hover {
     border-width: medium;
 }
 
+a.button {
+    text-shadow: 0 1px 3px rgba(0,0,0,.08);
+    white-space: nowrap;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 14px;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .025em;
+    text-decoration: none;
+    transition: all .15s ease;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    border: none;
+}
+
+a.primary {
+    color: #FFF;
+    background: #3ecf8e;
+}
+
+a.secondary {
+    color: #3B3E4D;
+    background: #FFF;
+}
+
+a.button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+}
+
 .content {
     width: 80%;
     margin-top: 5%;
@@ -188,14 +223,9 @@ a:hover {
     margin-bottom: 48px;
 }
 
-.about, .about a {
+.about {
     background-color: #FFE59C;
     color: #3B3E4D;
-    /* sectionsColor: ['#ffe59c', '#5582AF', '#5582AF', '#FFF6E5', '#FF7E65', '#2185C6', '#3D454C'], */
-}
-
-.about a {
-    border-bottom: 1px solid #3B3E4D;
     /* sectionsColor: ['#ffe59c', '#5582AF', '#5582AF', '#FFF6E5', '#FF7E65', '#2185C6', '#3D454C'], */
 }
 
@@ -294,7 +324,7 @@ a:hover {
     background-image: url(../img/happyfish.png);
     background-position: right 16px bottom 16px;
     background-repeat: no-repeat;
-    background-size: 60%;
+    background-size: 48%;
 }
 
 .hf h1, .hf p {
@@ -381,6 +411,7 @@ a:hover {
     color: #333;
     text-decoration: none;
     border: none;
+    font-weight: 400;
 }
 
 .name a:hover {
@@ -515,10 +546,6 @@ a:hover {
 
 .resume p.confidence {
     font-size: 0.6em;
-}
-
-.resume a {
-    font-weight: unset;
 }
 
 .infobox {
