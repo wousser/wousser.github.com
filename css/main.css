@@ -250,6 +250,7 @@ a.button:hover {
 
 .hw h1, .hw p {
     width: fit-content;
+    color: #FFF;
     background-color: #6885AD;
     padding: 0 8px;
     border-radius: 4px;
@@ -327,10 +328,15 @@ a.button:hover {
     background-size: 48%;
 }
 
-.hf h1, .hf p {
+.hf h1, .hf p, .hf a {
+    color: #FFF;
     background-color: #2185C6;
     width: fit-content;
     border-radius: 4px;
+}
+
+.hf a {
+    border-bottom-color: #FFF;
 }
 
 .sideprojects, .sideprojects a {
@@ -373,7 +379,7 @@ a.button:hover {
 }
 
 .highlight {
-    font-weight: normal;
+    font-weight: 400;
     font-style: italic;
     font-size: 1em;
 }
@@ -527,7 +533,7 @@ a.button:hover {
 }
 
 .resume p {
-  font-size: 1em;
+    font-size: 1em;
     max-width: unset;
 }
 
