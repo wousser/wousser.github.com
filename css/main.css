@@ -204,8 +204,8 @@ a.primary {
 }
 
 a.secondary {
-    color: #3B3E4D;
-    background: #FFF;
+    color: #3B3E4D !important;
+    background: #FFF !important;
 }
 
 a.button:hover {
@@ -277,6 +277,13 @@ a.button:hover {
     background-image: url(../img/hongkong.jpg);
 }
 
+.bian {
+    color: #FFF;
+    background-color: #000000;
+    background-size: cover;
+    background-image: url(../img/background/bian.svg);
+}
+
 .ihg {
     background-color: #FFF6E5;
     background-image: url(../img/crosschannel-transparent.png);
@@ -307,11 +314,11 @@ a.button:hover {
 
 .socialcontactjournal {
     background-color: #FFC100;
-    background-image: url(../img/screenshot_today_screen.png);
-    background-repeat: no-repeat;
+    /* background-image: url(../img/screenshot_today_screen.png);
+    background-repeat: no-repeat; */
     color: #4A4A4A;
-    background-position: bottom 50% right 16px;
-    background-size: 24%;
+    /* background-position: bottom 50% right 16px;
+    background-size: 24%; */
 }
 
 .socialcontactjournal h1, .socialcontactjournal p {
@@ -429,10 +436,6 @@ a.button:hover {
 #wechat-link a:hover +  {
     display: block;
 }
-
-/* #wechat-widget {
-    
-} */
 
 .wechat:hover #wechat-widget {
     display: block;
@@ -564,6 +567,45 @@ a.button:hover {
 
 .infobox a {
     font-size: 0.8em;
+}
+
+.resume span.emphasize {
+    font-weight: 200;
+    
+}
+
+/*
+ * Image row
+ */
+
+.images {
+    display: flex;
+    flex-wrap: row nowrap;
+    /* margin: -20px; */
+    width: 75%;
+}
+  
+.imagewrapper {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(50% - 20px);
+    max-height: 375px;
+    margin-right: 16px; */
+    display: flex;
+    padding: 0 10px 0px 0;
+}
+  
+.image {
+    /* display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%; 
+    border-radius: 4px; */
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 4px;
 }
 
 /* ==========================================================================
@@ -766,6 +808,10 @@ a.button:hover {
     a:visited {
         text-decoration: none;
         border-bottom: 0;
+    }
+
+    .hideprint {
+        display: none !important;
     }
 
     /* a[href]:after {
