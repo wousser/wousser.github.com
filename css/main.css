@@ -10,12 +10,6 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-}
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -119,13 +113,18 @@ textarea {
 body {
     font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
     font-weight: 100;
-    line-height: 1.45;
+    /* line-height: 1.45; */
+    color: #222;
+    font-size: 1em;
+    line-height: 2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: auto;
 }
 
 p {
     margin-bottom: 1.3em;
     max-width: 60%;
-    line-height: 1.80;
+    line-height: 1.5em;
     font-size: 1.333em;
     font-weight: 100;
 }
@@ -400,178 +399,45 @@ a.button:hover {
     width: 20%;
 }
 
-/* header */
+/* logos */
 
-#header {
-    position: fixed;
-    height: 40px;
+.brands {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding-inline-start: 0px;
+  }
+  
+  .brands__item {
+    /* background: #eee; */
+    flex: 0 0 50%;
+  }
+
+  @media (min-width: 700px) {
+    .brands__item {
+      flex: 0 0 33.33%;
+    }
+  }
+  
+  @media (min-width: 1100px) {
+    .brands__item {
+      flex: 0 0 20%;
+    }
+  }
+  
+  .brands__item img {
     display: block;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.45);
-    z-index: 1000;
-    text-align: center;
-    color: #333;
-    top: 0px;
-}
+    /* Make sure max-width is added */
+    max-width: 100%;
+    width: 130px;
+    height: 75px;
+    object-fit: contain;
+  }
 
-.name {
-    float: left;
-    padding-left: 60px;
-    padding-top: 10px;
-}
-
-.name a {
-    color: #333;
-    text-decoration: none;
-    border: none;
-    font-weight: 400;
-}
-
-.name a:hover {
-    color: #000;
-    text-decoration: none;
-    font-weight: 400;
-}
-
-#wechat-link a:hover +  {
-    display: block;
-}
-
-.wechat:hover #wechat-widget {
-    display: block;
-}
-
-#wechat-widget {
-    display: none;
-    position: absolute;
-    background: #FFF;
-    border: #DDD 1px solid;
-    box-shadow: 0px 2px 3px rgba(0,0,0,0.25);
-    padding: 2px;
-    text-align: center;
-    font-weight: 300;
-    color: #111;
-    width: 200px;
-    max-width: 200px;
-    right: 3%;
-    top: 40px;
-}
-
-#wechat-widget p {
-    font-size: 12px;
-    max-width: unset;
-}
-
-#wechat-widget img {
-    width: 200px;
-}
-
-.social {
-    float: right;
-    padding-right: 60px;
-    padding-top: 5px;
-    margin: auto;
-    width: 120px;
-    height: 100%;
-    box-sizing: initial;
-}
-
-.social a {
-    border: none;
-}
-
-.social-icon {
-    float: left;
-    width: 40px;
-    opacity: 0.5;
-    height: 100%;
-}
-
-.social-icon:hover {
-    opacity: 1;
-}
-
-/* ==========================================================================
-  Resume
-  ========================================================================== */
-
-.resume {
-    margin-left: 12.5%;
-    width: 75%;
-    margin-bottom: 100px;
-    margin-top: 100px;
-}
-
-.resume h1 {
-    font-size: 3.263em;
-    line-height: 1.048;
-    font-weight: 100;
-}
-
-.resume h2 {
-    font-size: 2.7em;
-    line-height: 1.048;
-    font-weight: 300;
-    margin-top: 48px;
-}
-
-.resume h3 {
-    font-size: 2.5em;
-    font-weight: 200;
-    margin-top: 32px;
-    margin-bottom: 8px;
-}
-
-.resume h4 {
-    font-size: 1.5em;
-    font-weight: 200;
-    margin-bottom: 16px;
-    margin-top: 24px;
-}
-
-.resume h5 {
-    color: #222;
-    margin-bottom: 24px;
-    
-}
-
-.resume p {
-    font-size: 1em;
-    max-width: unset;
-}
-
-.resume strong {
-    font-size: 0.8em;
-}
-
-.resume li {
-    margin-bottom: 4px;
-    line-height: 1.80;
-}
-
-.resume p.smaller {
-    font-size: 0.8em;
-}
-
-.resume p.confidence {
-    font-size: 0.6em;
-}
-
-.infobox {
-    float: right;
-}
-
-.infobox p {
-    margin: 0;
-}
-
-.infobox a {
-    font-size: 0.8em;
-}
-
-.resume span.emphasize {
-    font-weight: 200;
-    
+    .brands__item img[src$=".jpg"],
+    .brands__item img[src$=".png"] {
+      mix-blend-mode: multiply;
 }
 
 /*
@@ -753,6 +619,15 @@ a.button:hover {
     .fullpage {
         min-height: 600px;
     }
+
+    #about > div > div > a.primary.button {
+        margin-right: 8px;
+    }
+
+    .images {
+        width: 100%;
+    }
+    
 }
 
 @media only screen and (max-device-width: 768px) {

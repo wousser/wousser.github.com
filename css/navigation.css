@@ -1,0 +1,90 @@
+/* navigation */
+
+#header {
+    position: fixed;
+    height: 40px;
+    display: block;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.45);
+    z-index: 1000;
+    text-align: center;
+    color: #333;
+    top: 0px;
+}
+
+.name {
+    float: left;
+    padding-left: 60px;
+    padding-top: 10px;
+}
+
+.name a {
+    color: #333;
+    text-decoration: none;
+    border: none;
+    font-weight: 400;
+}
+
+.name a:hover {
+    color: #000;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+#wechat-link a:hover +  {
+    display: block;
+}
+
+.wechat:hover #wechat-widget {
+    display: block;
+}
+
+#wechat-widget {
+    display: none;
+    position: absolute;
+    background: #FFF;
+    border: #DDD 1px solid;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.25);
+    padding: 2px;
+    text-align: center;
+    font-weight: 300;
+    color: #111;
+    width: 200px;
+    max-width: 200px;
+    right: 3%;
+    top: 40px;
+}
+
+#wechat-widget p {
+    font-size: 12px;
+    max-width: unset;
+}
+
+#wechat-widget img {
+    width: 200px;
+}
+
+.social {
+    float: right;
+    padding-right: 60px;
+    padding-top: 5px;
+    margin: auto;
+    width: 120px;
+    height: 100%;
+    box-sizing: initial;
+}
+
+.social a {
+    border: none;
+}
+
+.social-icon {
+    float: left;
+    width: 40px;
+    opacity: 0.5;
+    height: 100%;
+}
+
+.social-icon:hover {
+    opacity: 1;
+}

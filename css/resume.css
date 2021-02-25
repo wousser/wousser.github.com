@@ -1,0 +1,170 @@
+/* ==========================================================================
+  Resume
+  ========================================================================== */
+
+body {
+    font-family: "IBM Plex Sans", "Helvetica Neue", -apple-system, Arial, sans-serif;
+    font-weight: 400;
+    color: #3e4c5b;
+    font-size: 1em;
+    line-height: 2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: auto;
+}
+
+.resume {
+    max-width: 800px;
+    margin: 60px auto 110px;
+    position: relative;
+}
+
+.resume h1 {
+    font-size: 2em;
+    line-height: 1.5;
+    font-weight: 800;
+    color: #3e4c5b;
+}
+
+.resume h2 {
+    font-size: 2em;
+    line-height: 1.5;
+    font-weight: 800;
+    margin-top: 48px;
+    margin-bottom: 8px;
+    color: #3e4c5b;
+}
+
+.resume h3 {
+    font-size: 1.5em;
+    line-height: 1.5;
+    font-weight: 800;
+    margin-top: 32px;
+    margin-bottom: 8px;
+    color: #3e4c5b;
+}
+
+.resume h4 {
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 800;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    color: #3e4c5b;
+}
+
+.resume h5 {
+    font-size: 1em;
+    color: #3e4c5b;
+    margin: 0;
+    font-weight: 500;
+}
+
+.resume p {
+    font-size: 1em;
+    white-space: pre-line;
+    word-break: break-word;
+    font-weight: 400;
+    line-height: 2em;
+}
+
+.resume p.description {
+    font-size: 0.8em;
+    color: #9aa8b6;
+    line-height: 2em;
+    margin: 0;
+}
+
+.resume strong {
+    font-size: 0.8em;
+}
+
+.resume li {
+    margin-bottom: 1em;
+}
+
+.resume p.confidence {
+    font-size: 0.6em;
+}
+
+.resume span.emphasize {
+    font-style: italic;
+}
+
+a {
+    color: #3e4c5b;
+}
+
+a.button {
+    text-shadow: 0 1px 3px rgba(0,0,0,.08);
+    white-space: nowrap;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 14px;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .025em;
+    text-decoration: none;
+    transition: all .15s ease;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    border: none;
+}
+
+a.primary {
+    color: #FFF;
+    background: #3ecf8e;
+}
+
+a.secondary {
+    color: #3B3E4D !important;
+    background: #FFF !important;
+}
+
+a.button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+}
+
+.infobox {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.infobox p {
+    margin: 0;
+}
+
+.infobox a {
+    font-size: 0.8em;
+}
+
+@media only screen and (max-device-width: 850px) {
+
+    .resume {
+        max-width: 600px;
+        margin: 60px auto 110px;
+    }
+}
+
+@media only screen and (max-device-width: 767px) {
+
+    .resume {
+        margin: 60px 20px 110px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    .resume {
+        margin: 60px 20px 110px;
+    }
+
+    .infobox {
+        position: inherit;
+    }
+}
