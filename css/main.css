@@ -111,35 +111,42 @@ textarea {
 }
 
 body {
-    font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
-    font-weight: 100;
-    /* line-height: 1.45; */
-    color: #222;
+    font-family: "IBM Plex Sans", "Helvetica Neue", -apple-system, Arial, sans-serif;
+    font-weight: 400;
+    color: #3e4c5b;
     font-size: 1em;
     line-height: 2em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: auto;
 }
 
-p {
-    margin-bottom: 1.3em;
-    max-width: 60%;
-    line-height: 1.5em;
-    font-size: 1.333em;
-    font-weight: 100;
+.content {
+    width: 800px;
+    margin: 60px auto 110px;
 }
 
 h1 {
-    margin-top: 0;
-    font-size: 3.157em;
-    /* margin-bottom: 1em; */
-    font-weight: 100;
+    font-size: 2em;
+    line-height: 1.5;
+    font-weight: 800;
+    color: #3e4c5b;
+}
+
+p {
+    font-size: 1em;
+    white-space: pre-line;
+    word-break: break-word;
+    font-weight: 400;
+    line-height: 2em;
 }
 
 h2 {
-    margin-top: 0;
-    font-size: 2.369em;
-    /* margin-bottom: 2.369em; */
+    font-size: 2em;
+    line-height: 1.5;
+    font-weight: 800;
+    margin-top: 48px;
+    margin-bottom: 8px;
+    color: #3e4c5b;
 }
 
 h3 {
@@ -212,12 +219,6 @@ a.button:hover {
     box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
 }
 
-.content {
-    width: 80%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
 .summary {
     margin-bottom: 48px;
 }
@@ -274,6 +275,10 @@ a.button:hover {
     background-color: #FFF;
     background-size: cover;
     background-image: url(../img/hongkong.jpg);
+}
+
+.bian h1 {
+    color: #FFF;
 }
 
 .bian {
@@ -355,15 +360,15 @@ a.button:hover {
     background-size: 10%;
 }
 
-.sideprojects h2 {
-    font-weight: 100;
-    margin: 0;
-}
-
 .sideprojects h1, .sideprojects p {
     background-color: #3D454C;
+    color: #CADBE8;
     width: fit-content;
     border-radius: 4px;
+}
+
+.sideprojects h2 {
+    color: #CADBE8;
 }
 
 .sideprojects p {
