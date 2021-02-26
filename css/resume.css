@@ -143,6 +143,17 @@ a.button:hover {
     font-size: 0.8em;
 }
 
+@media (max-width: 1024px) {
+
+    .resume {
+        margin: 0px 20px 0px;
+    }
+
+    .infobox {
+        position: inherit;
+    }
+}
+
 @media only screen and (max-device-width: 850px) {
 
     .resume {

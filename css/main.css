@@ -68,6 +68,10 @@ fieldset {
     padding: 0;
 }
 
+[tabindex] {
+    outline: none !important;
+}
+
 /*
  * Allow only vertical resizing of textareas.
  */
@@ -149,49 +153,19 @@ h2 {
     color: #3e4c5b;
 }
 
-h3 {
-    margin-top: 0;
-    font-size: 1.777em;
-    /* margin-bottom: 1.777em; */
-}
-
-h4 {
-    margin-top: 0;
-    font-size: 1.333em;
-    /* margin-bottom: 1.333em; */
-}
-
-h5 {
-    margin-top: 0;
-    font-size: 0.83em;
-    font-weight: 100;
-    /* margin-bottom: 1.333em; */
-}
-
-small, .font_small {
-    margin-top: 0;
-    font-size: 0.75em;
-    /* margin-bottom: 0.75em; */
-}
-
 a {
-    color: #222;
-    text-decoration: none;
-    border-bottom: 1px solid #222;
-}
-
-a:hover {
-    border-width: medium;
+    color: #3e4c5b;
+    /* border-bottom: 1px solid #222; */
 }
 
 a.button {
-    text-shadow: 0 1px 3px rgba(0,0,0,.08);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .08);
     white-space: nowrap;
     display: inline-block;
     height: 40px;
     line-height: 40px;
     padding: 0 14px;
-    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
     border-radius: 4px;
     font-size: 15px;
     font-weight: 600;
@@ -216,11 +190,7 @@ a.secondary {
 
 a.button:hover {
     transform: translateY(-1px);
-    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
-}
-
-.summary {
-    margin-bottom: 48px;
+    box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
 }
 
 .about {
@@ -235,7 +205,8 @@ a.button:hover {
     background-image: url(../img/jenny-hill-202522-unsplash.jpg);
 }
 
-.nzmp h1, .nzmp p {
+.nzmp h1,
+.nzmp p {
     width: fit-content;
     background-color: hsla(0, 0%, 100%, 0.9);
     padding: 0 8px;
@@ -243,12 +214,12 @@ a.button:hover {
 }
 
 .hw {
-    background-color: #FFF;
-    background-size: cover;
+    background-color: #6885AD;
     background-image: url(../img/aerial-work-under-the-burning-sun.jpg);
 }
 
-.hw h1, .hw p {
+.hw h1,
+.hw p {
     width: fit-content;
     color: #FFF;
     background-color: #6885AD;
@@ -264,7 +235,8 @@ a.button:hover {
     background-size: 20%;
 }
 
-.watsons h1, .watsons p {
+.watsons h1,
+.watsons p {
     color: #FFF;
     background-color: rgb(0, 154, 169);
     width: fit-content;
@@ -277,10 +249,6 @@ a.button:hover {
     background-image: url(../img/hongkong.jpg);
 }
 
-.bian h1 {
-    color: #FFF;
-}
-
 .bian {
     color: #FFF;
     background-color: #000000;
@@ -288,15 +256,20 @@ a.button:hover {
     background-image: url(../img/background/bian.svg);
 }
 
+.bian h1 {
+    color: #FFF;
+}
+
 .ihg {
     background-color: #FFF6E5;
     background-image: url(../img/crosschannel-transparent.png);
     background-position: bottom 16px right 16px;
     background-repeat: no-repeat;
-    background-size: 45%;
+    background-size: 35%;
 }
 
-.ihg h1, .ihg p {
+.ihg h1,
+.ihg p {
     background-color: #FFF6E5;
     width: fit-content;
     border-radius: 4px;
@@ -306,11 +279,12 @@ a.button:hover {
     background-color: #FF7E65;
     background-image: url(../img/Vivaz-Pro.png);
     background-repeat: no-repeat;
-    background-position: bottom 16px right 16px;
-    background-size: 40%;
+    background-position: bottom 20px right 20px;
+    background-size: 30%;
 }
 
-.se h1, .se p {
+.se h1,
+.se p {
     background-color: #FF7E65;
     width: fit-content;
     border-radius: 4px;
@@ -318,14 +292,10 @@ a.button:hover {
 
 .socialcontactjournal {
     background-color: #FFC100;
-    /* background-image: url(../img/screenshot_today_screen.png);
-    background-repeat: no-repeat; */
-    color: #4A4A4A;
-    /* background-position: bottom 50% right 16px;
-    background-size: 24%; */
 }
 
-.socialcontactjournal h1, .socialcontactjournal p {
+.socialcontactjournal h1,
+.socialcontactjournal p {
     background-color: #FFC100;
     width: fit-content;
     border-radius: 4px;
@@ -334,25 +304,23 @@ a.button:hover {
 .hf {
     background-color: #2185C6;
     background-image: url(../img/happyfish.png);
-    background-position: right 16px bottom 16px;
+    background-position: right 20px bottom 20px;
     background-repeat: no-repeat;
-    background-size: 48%;
+    background-size: 40%;
 }
 
-.hf h1, .hf p, .hf a {
+.hf h1,
+.hf p,
+.hf a {
     color: #FFF;
     background-color: #2185C6;
     width: fit-content;
     border-radius: 4px;
 }
 
-.hf a {
-    border-bottom-color: #FFF;
-}
-
-.sideprojects, .sideprojects a {
+.sideprojects,
+.sideprojects a {
     background-color: #3D454C;
-    color: #CADBE8;
     border-bottom: 1px solid #CADBE8;
     background-image: url(../img/tcdisrupt/tclogo.png);
     background-position: right 8% top 8%;
@@ -360,19 +328,13 @@ a.button:hover {
     background-size: 10%;
 }
 
-.sideprojects h1, .sideprojects p {
+.sideprojects h1,
+.sideprojects p,
+.sideprojects h2 {
     background-color: #3D454C;
     color: #CADBE8;
     width: fit-content;
     border-radius: 4px;
-}
-
-.sideprojects h2 {
-    color: #CADBE8;
-}
-
-.sideprojects p {
-    max-width: unset;
 }
 
 .contact {
@@ -395,11 +357,6 @@ a.button:hover {
     font-size: 1em;
 }
 
-.supersocialimage {
-    width: 50%;
-    margin: 16px 0;
-}
-
 .tcphoto {
     width: 20%;
 }
@@ -408,41 +365,43 @@ a.button:hover {
 
 .brands {
     display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style-type: none;
-  padding-inline-start: 0px;
-  }
-  
-  .brands__item {
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+.brands__item {
     /* background: #eee; */
     flex: 0 0 50%;
-  }
+}
 
-  @media (min-width: 700px) {
+@media (min-width: 700px) {
+
     .brands__item {
-      flex: 0 0 33.33%;
+        flex: 0 0 33.33%;
     }
-  }
-  
-  @media (min-width: 1100px) {
+}
+
+@media (min-width: 1100px) {
+
     .brands__item {
-      flex: 0 0 20%;
+        flex: 0 0 20%;
     }
-  }
-  
-  .brands__item img {
+}
+
+.brands__item img {
     display: block;
     /* Make sure max-width is added */
     max-width: 100%;
     width: 130px;
     height: 75px;
     object-fit: contain;
-  }
+}
 
-    .brands__item img[src$=".jpg"],
-    .brands__item img[src$=".png"] {
-      mix-blend-mode: multiply;
+.brands__item img[src$=".jpg"],
+.brands__item img[src$=".png"] {
+    mix-blend-mode: multiply;
 }
 
 /*
@@ -452,27 +411,15 @@ a.button:hover {
 .images {
     display: flex;
     flex-wrap: row nowrap;
-    /* margin: -20px; */
     width: 75%;
 }
-  
+
 .imagewrapper {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    width: calc(50% - 20px);
-    max-height: 375px;
-    margin-right: 16px; */
     display: flex;
     padding: 0 10px 0px 0;
 }
-  
+
 .image {
-    /* display: block;
-    object-fit: cover;
-    width: 100%;
-    height: 100%; 
-    border-radius: 4px; */
     width: 100%;
     height: auto;
     vertical-align: middle;
@@ -509,7 +456,8 @@ a.button:hover {
     padding: 0;
     position: absolute;
     width: 1px;
-    white-space: nowrap; /* 1 */
+    white-space: nowrap;
+    /* 1 */
 }
 
 /*
@@ -551,8 +499,10 @@ a.button:hover {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .clearfix:after {
@@ -564,106 +514,45 @@ a.button:hover {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media (max-width: 1024px) {
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+    .content {
+        margin: 0px 20px 0px;
+    }
+
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-    
-    .name {
-        padding-left: 16px;
-    }
+@media only screen and (max-device-width: 850px) {
 
-    .social {
-        padding-right: 16px;
+    .content {
+        max-width: 600px;
+        margin: 60px auto 110px;
     }
+}
 
-    h1, .resume h1 {
-        font-size: 2em;
-    }
+@media only screen and (max-device-width: 767px) {
 
-    p {
-        max-width: unset;
-    }
-
-    .infobox {
-        display: none;
-    }
-
-    .resume h3 {
-        font-size: 1.3em;
-        font-weight: 300;
-    }
-
-    .resume h4 {
-        font-size: 1.2em;
-        font-weight: 200;
-        margin-bottom: 16px;
-    }
-
-    .resume h5 {
-        font-size: 1em;
-        font-weight: 100;
-        margin-bottom: 16px;
-        margin-top: 0;
-    }
-
-    .resume li {
-        font-size: 1em;
-        margin-bottom: 8px;
-    }
-
-    .resume {
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 15%;
-        width: 90%;
+    .content {
+        margin: 60px 20px 110px;
     }
 
     .fullpage {
-        min-height: 600px;
+        min-height: 0;
     }
-
-    #about > div > div > a.primary.button {
-        margin-right: 8px;
-    }
-
-    .images {
-        width: 100%;
-    }
-    
 }
 
-@media only screen and (max-device-width: 768px) {
-    
-    h1 {
-        font-size: 1.1em;
-        font-weight: 400;
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    .content {
+        margin: 60px 20px 110px;
     }
 
-    p {
-        font-size: 1em;
+    .fullpage {
+        min-height: 0;
     }
+}
 
-    p.highlight {
-        font-size: 0.8em;
-    }
-
-    .socialcontactjournal {
-        background-position: bottom 12px right 16px;
-    }
-
-    .sideprojects h2 {
-        font-size: 1em;
-        font-weight: 300;
-    }
-}  
-
-@media print,
-    (-webkit-min-device-pixel-ratio: 1.25),
-    (min-resolution: 1.25dppx),
-    (min-resolution: 120dpi) {
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx),(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -679,7 +568,8 @@ a.button:hover {
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster */
+        color: #000 !important;
+        /* Black prints faster */
         box-shadow: none !important;
         text-shadow: none !important;
     }

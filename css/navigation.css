@@ -3,32 +3,30 @@
 #header {
     position: fixed;
     height: 40px;
-    display: block;
     width: 100%;
     background: rgba(255, 255, 255, 0.45);
     z-index: 1000;
-    text-align: center;
-    color: #333;
     top: 0px;
+    display: flex;
+    justify-content: center;
 }
 
-.name {
-    float: left;
-    padding-left: 60px;
-    padding-top: 10px;
+.headercontent {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1024px;
 }
 
 .name a {
-    color: #333;
+    color: #3e4c5b;
     text-decoration: none;
     border: none;
     font-weight: 400;
 }
 
 .name a:hover {
-    color: #000;
-    text-decoration: none;
-    font-weight: 400;
+    color: #222;
 }
 
 #wechat-link a:hover +  {
@@ -39,19 +37,24 @@
     display: block;
 }
 
+.wechat {
+    position: relative;
+}
+
 #wechat-widget {
     display: none;
     position: absolute;
     background: #FFF;
-    border: #DDD 1px solid;
+    border: #3e4c5b 1px solid;
+    border-radius: 4px;
     box-shadow: 0px 2px 3px rgba(0,0,0,0.25);
     padding: 2px;
     text-align: center;
     font-weight: 300;
-    color: #111;
+    color: #3e4c5b;
     width: 200px;
     max-width: 200px;
-    right: 3%;
+    right: -100px;
     top: 40px;
 }
 
@@ -65,26 +68,52 @@
 }
 
 .social {
-    float: right;
-    padding-right: 60px;
-    padding-top: 5px;
-    margin: auto;
+    margin-left: auto;
     width: 120px;
-    height: 100%;
     box-sizing: initial;
 }
 
 .social a {
     border: none;
+    display: flex;
+    justify-content: center;
 }
 
 .social-icon {
     float: left;
     width: 40px;
-    opacity: 0.5;
     height: 100%;
+    color: #3e4c5b;
 }
 
 .social-icon:hover {
     opacity: 1;
+}
+
+@media (max-width: 1024px) {
+
+    .headercontent {
+        margin: 0px 20px 0px;
+    }
+}
+
+@media only screen and (max-device-width: 850px) {
+
+    .headercontent {
+        margin: 0px 20px 0px;
+    }
+}
+
+@media only screen and (max-device-width: 767px) {
+
+    .headercontent {
+        margin: 0px 20px 0px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    .headercontent {
+        margin: 0px 20px 0px;
+    }
 }
