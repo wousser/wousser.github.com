@@ -357,10 +357,6 @@ a.button:hover {
     font-size: 1em;
 }
 
-.tcphoto {
-    width: 20%;
-}
-
 /* logos */
 
 .brands {
@@ -379,7 +375,7 @@ a.button:hover {
 @media (min-width: 700px) {
 
     .brands__item {
-        flex: 0 0 33.33%;
+        flex: 0 0 20%;
     }
 }
 
@@ -408,21 +404,43 @@ a.button:hover {
  * Image row
  */
 
-.images {
+.masonry ul {
     display: flex;
     flex-wrap: nowrap;
-    /* width: 75%; */
+    padding: 0;
+    overflow: scroll;
+    max-width: 800px;
 }
 
-.imagewrapper {
-    padding: 0 10px 0px 0;
+.masonry li {
+    height: 40vh;
+    list-style: none;
+    margin-right: 10px;
 }
 
-.image {
-    width: 100%;
-    height: auto;
-    vertical-align: middle;
+.masonry li:last-child {
+    flex-grow: 10;
+    margin-right: 0px;
+}
+
+.masonry img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: contain;
+    vertical-align: bottom;
     border-radius: 4px;
+}
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+
+    .masonry li {
+        height: auto;
+    }
+
+    .masonry img {
+        min-width: 100%;
+        max-height: 20vh;
+    }
 }
 
 /* ==========================================================================
@@ -519,6 +537,10 @@ a.button:hover {
         margin: 0px 20px 0px;
     }
 
+    .masonry ul {
+        max-width: 90vw;
+    }
+
 }
 
 @media only screen and (max-device-width: 850px) {
@@ -527,12 +549,20 @@ a.button:hover {
         max-width: 600px;
         margin: 60px auto 110px;
     }
+
+    .masonry ul {
+        max-width: 90vw;
+    }
 }
 
 @media only screen and (max-device-width: 767px) {
 
     .content {
         margin: 60px 20px 110px;
+    }
+
+    .masonry ul {
+        max-width: 90vw;
     }
 
     .fullpage {
@@ -544,6 +574,10 @@ a.button:hover {
 
     .content {
         margin: 60px 20px 110px;
+    }
+
+    .masonry ul {
+        max-width: 90vw;
     }
 
     .fullpage {
