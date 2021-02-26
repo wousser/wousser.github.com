@@ -410,12 +410,11 @@ a.button:hover {
 
 .images {
     display: flex;
-    flex-wrap: row nowrap;
-    width: 75%;
+    flex-wrap: nowrap;
+    /* width: 75%; */
 }
 
 .imagewrapper {
-    display: flex;
     padding: 0 10px 0px 0;
 }
 
